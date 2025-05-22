@@ -18,8 +18,8 @@ db_config = {
     'password': os.environ.get('MYSQL_PASSWORD'),
     'database': os.environ.get('MYSQL_DB'),
     'cursorclass': pymysql.cursors.DictCursor,
-    'ssl': {'ca': '/opt/render/project/src/aiven-ca.pem'},
-    'ssl_verify_cert': True,
+    # 'ssl': {'ca': '/opt/render/project/src/aiven-ca.pem'},
+    'ssl': {'ca': None, 'check_hostname': False}
 
 }
 
