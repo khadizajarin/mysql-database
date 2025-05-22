@@ -18,7 +18,7 @@ db_config = {
     'password': os.environ.get('MYSQL_PASSWORD'),
     'database': os.environ.get('MYSQL_DB'),
     'cursorclass': pymysql.cursors.DictCursor,
-    'ssl_ca': '/home/roza/Desktop/mysql-database/aiven-ca.pem',
+    'ssl': {'ca': 'aiven-ca.pem'},
     'ssl_verify_cert': True,
 
 }
